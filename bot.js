@@ -12,7 +12,10 @@ client.on('message', message => {
   }
 });
 
+client.on('ready', () => {
+ console.log(Bot Launched...')
 client.user.setGame('Hello!', 'https://twitch.tv/antimamba777');
+});
 
 client.on('message', function(message) {
     if (message.content == "!clear") {
