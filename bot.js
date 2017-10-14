@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
   if (message.content === '!picture') {
-    message.reply(message.author.avatarURL'ready');
+    message.reply(message.author.avatarURL);
   }
 });
 
