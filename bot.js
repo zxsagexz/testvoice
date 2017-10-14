@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
-  if (message.content === 'what is my avatar') {
+  if (message.content === '!pic') {
     message.reply(message.author.avatarURL);
   }
 });
