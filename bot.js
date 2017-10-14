@@ -8,8 +8,8 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
-  if (message.content === '!pic') {
-    message.reply(message.author.avatarURL);
+  if (message.content === '!picture') {
+    message.reply(message.author.avatarURL'ready');
   }
 });
 
