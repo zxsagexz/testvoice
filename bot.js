@@ -13,7 +13,7 @@ client.on('message', message => {
 });
 
 client.on('ready', () => {
-client.user.setGame('Hello!', 'https://twitch.tv/antimamba777');
+client.user.setGame('ʕ•́ᴥ•̀ʔ', 'https://twitch.tv/antimamba777');
 });
 
 client.on('message', function(message) {
