@@ -6,16 +6,8 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 
+client.user.setPresence ({game: {name: 'some name', type: 0}});
 
-client.on("ready", () => {
-  console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-});
-
-client.on("user", setPresence => {
-  if ({game: {name: 'sperma', type: 0 } 
-      });
-          
-          
 client.on('message', message => {
   if (message.content === '!picture') {
     message.reply(message.author.avatarURL);
