@@ -6,18 +6,13 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 
-client.user.setPresence({ game: { name: 'yourGameGoesHere', type: 0 } });
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
   client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
-client.on("guildCreate", guild => {
-  // This event triggers when the bot joins a guild.
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setGame(`on ${client.guilds.size} servers`);
-});
+client.user.setPresence({ game: { name: 'yourGameGoesHere', type: 0 } });
 
 client.on('message', message => {
   if (message.content === '!picture') {
