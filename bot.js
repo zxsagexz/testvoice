@@ -1,10 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const Commando = require('discord.js-commando');
-const Request = require('request');
-const Bot = new Commando.Client();
-
-Bot.client.setGame("!help for help");
 
 
 client.on('ready', () => {
