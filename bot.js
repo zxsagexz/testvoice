@@ -12,9 +12,7 @@ client.on('message', message => {
   }
 });
 
-client.on("ready", () => {
-    client.user.setPresence({game: {name: "with my code", type: 0}});
-});
+client.user.setGame('Hello!', 'https://twitch.tv/antimamba777');
 
 client.on('message', function(message) {
     if (message.content == "!clear") {
