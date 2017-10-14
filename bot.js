@@ -9,7 +9,6 @@ client.on('ready', () => {
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
 client.user.setPresence({ game: { name: 'yourGameGoesHere', type: 0 } });
