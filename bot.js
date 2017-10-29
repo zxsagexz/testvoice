@@ -7,8 +7,8 @@ if (fs.existsSync('sentryfile'))
     var sentry = fs.readFileSync('sentryfile');
     console.log('[STEAM] logging in with sentry ');
     bot.logOn({
-        accountName: 'rofldota5',
-        password: 'bhppfvgpcsfg1',
+        accountName: '',
+        password: '',
       shaSentryfile: sentry
     });
 }
