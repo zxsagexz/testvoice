@@ -1,1 +1,1 @@
-
+worker: node akebot.js
